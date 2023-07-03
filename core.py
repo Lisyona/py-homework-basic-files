@@ -97,8 +97,7 @@ if __name__=='__main__'
     worksheet = tools.search_worksheet(params)
     worksheets = worksheet.pop()        #показывает последний элемент списка и удаляет его из списка
     interesting_users = worksheet.sort_by_interests(user_id, users, named_interests)
-    for
-        photos = tools.get_photos(interesting_users['id'])
-        photo_like = tools.likes.add(photos)
-        photo_dislike = tools.likes.delete(photos)
+    photos = tools.get_photos(interesting_users['id'])
+    photo_like = tools.likes.add(photos)
+    photo_dislike = tools.likes.delete(photos)
     pprint(photos)
